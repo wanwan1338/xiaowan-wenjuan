@@ -1,0 +1,201 @@
+.container {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #eaecf0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(31 56 88 / 4%);
+}
+
+.cardHeader {
+  display: flex;
+  margin-bottom: 22px;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+
+  h3 {
+    margin: 0;
+    color: #1d2939;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  h3 span {
+    margin-right: 9px;
+    color: #1677ff;
+  }
+
+  > div {
+    flex-shrink: 0;
+    color: #98a2b3;
+    font-size: 13px;
+  }
+}
+
+.donutLayout {
+  display: flex;
+  min-height: 230px;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+}
+
+.donut {
+  position: relative;
+  width: 240px;
+  height: 220px;
+}
+
+.donutTotal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+
+  strong {
+    color: #1d2939;
+    font-size: 26px;
+  }
+
+  span {
+    color: #98a2b3;
+    font-size: 12px;
+  }
+}
+
+.legend {
+  width: min(360px, 45%);
+}
+
+.legendItem {
+  display: grid;
+  padding: 13px 0;
+  align-items: center;
+  grid-template-columns: 12px minmax(120px, 1fr) 36px 52px;
+  gap: 10px;
+  border-bottom: 1px solid #f2f4f7;
+
+  i {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+  }
+
+  strong {
+    color: #344054;
+    text-align: right;
+  }
+
+  em {
+    color: #98a2b3;
+    font-style: normal;
+    text-align: right;
+  }
+}
+
+.bars {
+  display: grid;
+  padding: 8px 4px 4px;
+  gap: 18px;
+}
+
+.barRow {
+  display: grid;
+  align-items: center;
+  grid-template-columns: minmax(150px, 240px) minmax(180px, 1fr) 34px 52px;
+  gap: 14px;
+}
+
+.barLabel {
+  color: #475467;
+  line-height: 1.35;
+}
+
+.track {
+  height: 12px;
+  overflow: hidden;
+  background: #f2f4f7;
+  border-radius: 999px;
+}
+
+.fill {
+  min-width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #4096ff, #1677ff);
+  border-radius: inherit;
+  transition: width 0.25s ease;
+}
+
+.barRow strong {
+  color: #344054;
+  text-align: right;
+}
+
+.barRow em {
+  color: #98a2b3;
+  font-style: normal;
+  text-align: right;
+}
+
+.textAnswers {
+  display: grid;
+  gap: 0;
+}
+
+.textAnswer {
+  display: grid;
+  padding: 14px 4px;
+  grid-template-columns: 38px 1fr;
+  gap: 8px;
+  border-bottom: 1px solid #f2f4f7;
+
+  span {
+    color: #98a2b3;
+    font-size: 12px;
+  }
+
+  p {
+    margin: 0;
+    color: #475467;
+    line-height: 1.6;
+  }
+}
+
+.more {
+  padding-top: 14px;
+  color: #1677ff;
+  text-align: center;
+}
+
+.loading {
+  display: flex;
+  min-height: 360px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 760px) {
+  .donutLayout {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .legend {
+    width: 100%;
+  }
+
+  .barRow {
+    grid-template-columns: 1fr 42px 48px;
+  }
+
+  .barLabel {
+    grid-column: 1 / -1;
+  }
+}

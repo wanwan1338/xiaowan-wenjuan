@@ -1,0 +1,37 @@
+.previewArea {
+  min-height: 560px;
+  padding: 24px;
+  background: #f5f7fa;
+  border-radius: 8px;
+}
+
+.paper {
+  width: 760px;
+  max-width: 100%;
+  min-height: 520px;
+  margin: 0 auto;
+  padding: 42px 52px;
+  background: #fff;
+  border: 1px solid #eaecf0;
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgb(31 56 88 / 8%);
+}
+
+.component {
+  margin-bottom: 28px;
+  pointer-events: none;
+}
+
+.component:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .previewArea {
+    padding: 10px;
+  }
+
+  .paper {
+    padding: 28px 20px;
+  }
+}

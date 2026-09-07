@@ -1,0 +1,143 @@
+.page {
+  min-height: 100vh;
+  padding: 40px 16px;
+  background: #f0f2f5;
+}
+
+.card {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  box-shadow: 0 4px 18px rgb(0 0 0 / 8%);
+
+  :global(.ant-card-body) {
+    padding: 36px 40px;
+  }
+}
+
+.header {
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center;
+}
+
+.staticComponent {
+  margin-bottom: 28px;
+}
+
+.questionItem {
+  margin-bottom: 28px;
+
+  :global(.ant-form-item-label > label) {
+    height: auto;
+    color: #1f2937;
+    line-height: 1.6;
+    white-space: normal;
+  }
+}
+
+.optionGroup {
+  display: flex;
+  width: 100%;
+  gap: 12px 24px;
+}
+
+.horizontalOptions {
+  flex-wrap: wrap;
+}
+
+.verticalOptions {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.option {
+  display: flex;
+  margin-inline-start: 0 !important;
+  margin-inline-end: 0;
+  align-items: flex-start;
+  line-height: 1.6;
+
+  :global(.ant-radio),
+  :global(.ant-checkbox) {
+    margin-top: 3px;
+  }
+}
+
+.form > :global(.ant-btn) {
+  margin-top: 4px;
+}
+
+.center {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+@media (max-width: 576px) {
+  .page {
+    padding: 0;
+  }
+
+  .card {
+    min-height: 100vh;
+    border-radius: 0;
+
+    :global(.ant-card-body) {
+      padding: 28px 20px 36px;
+    }
+  }
+
+  .header {
+    margin-bottom: 22px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 1.35;
+    }
+  }
+
+  .staticComponent {
+    margin-bottom: 24px;
+
+    :global(h1.ant-typography) {
+      font-size: 22px !important;
+      line-height: 1.4;
+    }
+
+    :global(h2.ant-typography) {
+      font-size: 20px !important;
+      line-height: 1.4;
+    }
+  }
+
+  .questionItem {
+    margin-bottom: 24px;
+
+    :global(.ant-form-item-label > label) {
+      font-size: 15px;
+    }
+  }
+
+  .horizontalOptions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .optionGroup {
+    gap: 12px;
+  }
+
+  .option {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .form :global(.ant-input),
+  .form :global(.ant-input-affix-wrapper) {
+    min-height: 44px;
+  }
+}

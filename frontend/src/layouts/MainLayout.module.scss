@@ -1,0 +1,15 @@
+.header {
+    padding: 0 24px;
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right
+    }
+}
+
+.main {
+    min-height: calc(100vh - 64px);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "wenjuan-mock",
+  "version": "1.0.0",
+  "description": "Stateful Koa API for the Wenjuan portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test test/store.test.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.14.1",
+    "koa-router": "^12.0.0",
+    "mockjs": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "nodemon": "^2.0.20"
+  }
+}

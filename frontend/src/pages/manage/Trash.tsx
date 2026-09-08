@@ -65,7 +65,6 @@ const Trash: FC = () => {
     {
       title: '标题',
       dataIndex: 'title',
-      // key: 'title', // 循环列的 key ，它会默认取 dataIndex 的值
     },
     {
       title: '是否发布',

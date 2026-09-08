@@ -1,6 +1,5 @@
 /**
  * @description 问卷 checkbox
- * @author 双越老师
  */
 
 import Component from './Component'

@@ -7,11 +7,7 @@ import {
   useSensors,
   DragEndEvent,
 } from '@dnd-kit/core'
-import {
-  // arrayMove,
-  SortableContext,
-  verticalListSortingStrategy,
-} from '@dnd-kit/sortable'
+import { SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable'
 
 type PropsType = {
   children: JSX.Element | JSX.Element[]

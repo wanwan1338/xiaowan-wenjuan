@@ -15,11 +15,7 @@ test('传入属性', () => {
   const span = screen.getByText('hello')
   expect(span).toBeInTheDocument()
 
-  const p = span.parentElement // 父元素
-  expect(p).not.toBeNull()
-
-  const style = p!.style || {}
-  expect(style.textAlign).toBe('center')
+  expect(span.parentElement).toHaveStyle({ textAlign: 'center' })
 })
 
 test('多行文字', () => {

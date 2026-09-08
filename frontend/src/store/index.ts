@@ -6,7 +6,6 @@ import pageInfoReducer, { PageInfoType } from './pageInfoReducer'
 
 export type StateType = {
   user: UserStateType
-  // components: ComponentsStateType
   components: StateWithHistory<ComponentsStateType> // 增加了 undo
   pageInfo: PageInfoType
 }
@@ -15,10 +14,6 @@ export default configureStore({
   reducer: {
     user: userReducer,
 
-    // // 没有 undo
-    // components: componentsReducer,
-
-    // 增加了 undo
     components: undoable(componentsReducer, {
       limit: 20, // 限制 undo 20 步
       filter: excludeAction([

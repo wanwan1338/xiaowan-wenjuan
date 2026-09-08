@@ -46,10 +46,6 @@ const QuestionCard: FC<QuestionCardPropsType> = (props: QuestionCardPropsType) =
 
   // 复制
   const { loading: duplicateLoading, run: duplicate } = useRequest(
-    // async () => {
-    //   const data = await duplicateQuestionService(_id)
-    //   return data
-    // },
     async () => await duplicateQuestionService(_id),
     {
       manual: true,

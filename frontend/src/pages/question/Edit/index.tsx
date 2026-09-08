@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-// import { useParams } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { useTitle } from 'ahooks'
 import { changeSelectedId } from '../../../store/componentsReducer'
@@ -12,7 +11,6 @@ import RightPanel from './RightPanel'
 import styles from './index.module.scss'
 
 const Edit: FC = () => {
-  // const { id = '' } = useParams()
   const dispatch = useDispatch()
 
   const { loading } = useLoadQuestionData()

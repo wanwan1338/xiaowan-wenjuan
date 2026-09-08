@@ -1,6 +1,5 @@
 /**
  * @description 常量
- * @author 双越老师
  */
 
 export const LIST_PAGE_SIZE = 10 // 默认的 pageSize

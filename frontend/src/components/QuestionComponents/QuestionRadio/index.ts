@@ -1,6 +1,5 @@
 /**
  * @description 问卷 radio
- * @author 双越老师
  */
 
 import Component from './Component'

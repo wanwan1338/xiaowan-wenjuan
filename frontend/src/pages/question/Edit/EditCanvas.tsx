@@ -14,10 +14,6 @@ import SortableContainer from '../../../components/DragSortable/SortableContaine
 import SortableItem from '../../../components/DragSortable/SortableItem'
 import styles from './EditCanvas.module.scss'
 
-// // 临时静态展示一下 Title Input 的效果
-// import QuestionTitle from '../../../components/QuestionComponents/QuestionTitle/Component'
-// import QuestionInput from '../../../components/QuestionComponents/QuestionInput/Component'
-
 type PropsType = {
   loading: boolean
 }
@@ -89,16 +85,6 @@ const EditCanvas: FC<PropsType> = ({ loading }) => {
               </SortableItem>
             )
           })}
-        {/* <div className={styles['component-wrapper']}>
-        <div className={styles.component}>
-          <QuestionTitle />
-        </div>
-      </div>
-      <div className={styles['component-wrapper']}>
-        <div className={styles.component}>
-          <QuestionInput />
-        </div>
-      </div> */}
       </div>
     </SortableContainer>
   )

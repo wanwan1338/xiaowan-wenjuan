@@ -13,8 +13,6 @@ import Trash from '../pages/manage/Trash'
 import Star from '../pages/manage/Star'
 import Answer from '../pages/Answer'
 import { preloadEditPage, preloadStatPage } from './pageLoaders'
-// import Edit from '../pages/question/Edit'
-// import Stat from '../pages/question/Stat'
 
 // 路由仍然按需拆包；用户移入入口时提前下载，避免点击后才开始加载。
 const Edit = lazy(preloadEditPage)
@@ -82,8 +80,6 @@ const router = createBrowserRouter([
 ])
 
 export default router
-
-// ------------ 分割线 ------------
 
 // 常用的路由，常量
 export const HOME_PATHNAME = '/'
